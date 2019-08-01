@@ -1,0 +1,429 @@
+body {
+    margin: 0;
+    margin-top: 50px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+header {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50x;
+    line-height:35px;
+
+    background-color: black;
+
+}
+
+header * {
+    display: inline;
+    height: 50px;
+}
+
+header ul {
+    padding: 0;
+}
+
+header li {
+    margin-left: 20px;
+}
+
+section {
+    height: 100vh;
+    /*border: 1px solid black;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+    background-size: cover; /* Add this line */
+    background-position: center center; /* Add this line */
+    background-repeat: no-repeat; /* Add this line */
+    background-attachment: fixed; /* Add this line */
+}
+
+#hero .profile-img {
+    width: 250px;
+    border-radius: 50%;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: black;
+    color: white;
+}
+
+#hero h1 {
+    font-size: 3em;
+
+    color: white;
+
+    /*border: 4px solid black ;*/
+
+    /*border: #eee 1px solid;
+    box-shadow: 0 0 0 8px #eee, 0 0 0 8px #eee;*/
+}
+
+#about h1 {
+    font-size: 3em;
+    color: white;
+
+    border: #eee 1px solid;
+    box-shadow: 0 0 0 5px #eee, 0 0 0 1px #eee;
+}
+
+#about h2 {
+    color: white;
+}
+
+#project1 h1, #project2 h1, #project3 h1, #project4 h1 {
+
+    text-decoration: underline;
+
+    font-size: 3.5em;
+    color: black;
+}
+
+#project1 h2, #project2 h2, #project3 h2, #project4 h2 {
+    font-size: 2em;
+    color: black;
+}
+
+#project1 img, #project2 img, #project3 img, #project4 img {
+    width: 50% ;
+    max-width: 25% ;
+    height: 10% ;
+  }
+
+#project1 p, #project2 p, #project3 p, #project4 p {
+    font-size: 1.5em;
+    color: white;
+}
+
+#project1 .gif, #project2 .gif, #project3 .gif, #project4 .gif {
+    width: 50% ;
+    max-width: 25% ;
+    height: 10% ;
+}
+
+#about p {
+    font-size: 1.5em;
+    color: white;
+}
+
+#contact p {
+    font-size: 1.5em;
+    color: white;
+}
+
+section h2 {
+    font-size: 2.5em;
+    color: white;
+}
+
+section h3 {
+    font-size: 1.5em;
+    color: white;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Add everything below here */
+/*
+#hero {
+    background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url('bg.jpg');
+}
+*/
+
+#hero {
+    background-image: linear-gradient(rgba(255,255,255,.4),rgba(0,0,0,.75)),url('bg.jpg');
+
+    
+}
+
+#about {
+    background-image:  linear-gradient(rgba(255,255,255,.2),rgba(0,0,0,.8)),url('trees.jpg');
+    
+}
+
+
+#project1, #project2, #project3, #project4 {
+    background-image:  linear-gradient(rgba(255,255,255,1),rgba(0,0,0,5)),url('tech.jpg');
+}
+
+#test {
+    padding: 10px;
+    background: rgba(0,0,0,.25);
+}
+
+#contact {
+    background-image:  linear-gradient(rgba(255,255,255,.3),rgba(0,0,0,.8)),url('phone.jpg');
+}
+
+A:link {
+    text-decoration: overline;
+    color: white;
+}
+A:hover {
+    text-decoration: underline;
+    color: rgb(209,209,209);
+}
+A:visited {
+    text-decoration: overline;
+    color: white;
+}
+
+#contact A:link {
+    text-decoration: underline;
+    color: white;
+}
+#contact A:hover {
+    text-decoration: line-through;
+}
+#contact A:visited {
+    color: white;
+}
+
+#project1 A:link, #project2 A:link, #project3 A:link, #project4 A:link {
+    text-decoration: overline underline;
+    color: white;
+}
+#project1 A:hover, #project2 A:hover, #project3 A:hover, #project4 A:hover {
+    text-decoration: line-through;
+    color: white;
+}
+
+#project1 A:visited, #project2 A:visited, #project3 A:visited, #project4 A:visited {
+    text-decoration: overline;
+    color: white;
+}
+
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+  }
+
+
+
+.toggle,
+[id^=drop] {
+	display: none;
+}
+
+/* Giving a background-color to the nav container. */
+nav { 
+	margin:0;
+	padding: 0;
+	background-color: black;
+}
+
+#logo {
+	display: block;
+	padding: 0 30px;
+	float: left;
+	font-size:20px;
+	line-height: 60px;
+}
+
+/* Since we'll have the "ul li" "float:left"
+ * we need to add a clear after the container. */
+
+nav:after {
+	content:"";
+	display:table;
+	clear:both;
+}
+
+/* Removing padding, margin and "list-style" from the "ul",
+ * and adding "position:reltive" */
+nav ul {
+	float: right;
+	padding:0;
+	margin:0;
+	list-style: none;
+	position: relative;
+	}
+	
+/* Positioning the navigation items inline */
+nav ul li {
+	margin: 0px;
+	display:inline-block;
+	float: left;
+	background-color: black;
+	}
+
+/* Styling the links */
+nav a {
+	display:block;
+	padding:14px 20px;	
+	color:#FFF;
+	font-size:17px;
+	text-decoration:none;
+}
+
+
+nav ul li ul li:hover { background: #3b3b3b; }
+
+
+
+/* Hide Dropdowns by Default
+ * and giving it a position of absolute */
+nav ul ul {
+	display: none;
+	position: absolute; 
+	/* has to be the same number as the "line-height" of "nav a" */
+	top: 60px; 
+}
+	
+/* Display Dropdowns on Hover */
+nav ul li:hover > ul {
+	display:inherit;
+}
+	
+/* Fisrt Tier Dropdown */
+nav ul ul li {
+	width:170px;
+	float:none;
+	display:list-item;
+	position: relative;
+}
+
+/* Second, Third and more Tiers	
+ * We move the 2nd and 3rd etc tier dropdowns to the left
+ * by the amount of the width of the first tier.
+*/
+nav ul ul ul li {
+	position: relative;
+	top:-60px;
+	/* has to be the same number as the "width" of "nav ul ul li" */ 
+	left:170px; 
+}
+
+	
+/* Change ' +' in order to change the Dropdown symbol */
+li > a:after { content:  ' +'; }
+li > a:only-child:after { content: ''; }
+
+
+/* Media Queries
+--------------------------------------------- */
+
+@media all and (max-width : 768px) {
+
+	#logo {
+		display: block;
+		padding: 0;
+		width: 100%;
+		text-align: center;
+		float: none;
+	}
+
+	nav {
+		margin: 0;
+	}
+
+	/* Hide the navigation menu by default */
+	/* Also hide the  */
+	.toggle + a,
+	.menu {
+		display: none;
+	}
+
+	/* Stylinf the toggle lable */
+	.toggle {
+		display: block;
+		background-color: black;
+		padding:0px 20px;	
+		color:#FFF;
+		font-size:17px;
+		text-decoration:none;
+		border:none;
+	}
+
+	.toggle:hover {
+		background-color: #000000;
+	}
+
+	/* Display Dropdown when clicked on Parent Lable */
+	[id^=drop]:checked + ul {
+		display: block;
+	}
+
+	/* Change menu item's width to 100% */
+	nav ul li {
+		display: block;
+		width: 100%;
+		}
+
+	nav ul ul .toggle,
+	nav ul ul a {
+		padding: 0 40px;
+	}
+
+	nav ul ul ul a {
+		padding: 0 80px;
+	}
+
+	nav a:hover,
+ 	nav ul ul ul a {
+		background-color: #000000;
+	}
+  
+	nav ul li ul li .toggle,
+	nav ul ul a,
+  nav ul ul ul a{
+		padding:14px 20px;	
+		color:#FFF;
+		font-size:17px; 
+	}
+  
+  
+	nav ul li ul li .toggle,
+	nav ul ul a {
+		background-color: black; 
+	}
+
+	/* Hide Dropdowns by Default */
+	nav ul ul {
+		float: none;
+		position:static;
+		color: #ffffff;
+		/* has to be the same number as the "line-height" of "nav a" */
+	}
+		
+	/* Hide menus on hover */
+	nav ul ul li:hover > ul,
+	nav ul li:hover > ul {
+		display: none;
+	}
+		
+	/* Fisrt Tier Dropdown */
+	nav ul ul li {
+		display: block;
+		width: 100%;
+	}
+
+	nav ul ul ul li {
+		position: static;
+		/* has to be the same number as the "width" of "nav ul ul li" */ 
+
+	}
+
+}
+
+@media all and (max-width : 330px) {
+
+	nav ul li {
+		display:block;
+		width: 94%;
+	}
+
+}

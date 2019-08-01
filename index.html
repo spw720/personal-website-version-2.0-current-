@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+    <script src="js.js"></script>
+    <head>
+        <title>Sean Wilson</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="logo.png">
+
+
+    </head>
+
+    <body>
+        <header>
+            <img src="logo.png" class="profile-img">
+
+
+            <nav>
+            
+                    <label for="drop" class="toggle">Menu +</label>
+                    <input type="checkbox" id="drop" />
+                        <ul class="menu">
+                            <li><a href="#hero">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li>
+                                <!-- First Tier Drop Down -->
+                                <label for="drop-1" class="toggle">Projects +</label>
+                                <a href="#project1">Projects</a>
+                                <input type="checkbox" id="drop-1"/>
+                                <ul>
+                                    <li><a href="#project1">First Drop</a></li>
+                                    <li><a href="#project2">CSLG</a></li>
+                                    <li><a href="#project3">Brevet</a></li>
+                                    <li><a href="#project4">ANN</a></li>
+                                    
+                                </ul> 
+            
+                            </li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </nav>
+
+            <!--
+            <nav>
+
+                <ul>
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#project">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+
+                    
+                    <div class="dropdown">
+                            <button class="dropbtn">Dropdown 
+                              <i class="fa fa-caret-down"></i>
+                            </button>
+                            <div class="dropdown-content">
+                              <a href="#">Link 1</a>
+                              <a href="#">Link 2</a>
+                              <a href="#">Link 3</a>
+                            </div>
+                          </div> 
+                        
+                </ul>
+            </nav>
+        -->
+        </header>
+        <main>
+            <section id="hero">
+                <div class="section-inner">
+                    <!--<img src="logo.png" class="profile-img">-->
+                    <img src="selfie.jpeg" class="profile-img">
+                    <br></br><br></br>
+                    <link href="https://fonts.googleapis.com/css?family=Raleway:200,100,400" rel="stylesheet" type="text/css" />
+                    <h1>Hey, I'm <br>
+                    <span
+                        class="txt-rotate"
+                        data-period="2000"
+                        data-rotate='[ "Sean.", "a Programmer.", "a Skiier.", "a Student.", "a Problem Solver." ]'>
+                    </span>
+                    </h1>
+                    
+                    <br></br><br></br><br></br><br></br>
+                </div>
+            </section>
+            <section id="about">
+                <div class="section-inner">
+                    <h1><i>A little about me</i></h1>
+                    <p>I'm currently a Senior at the <b>University of Oregon</b> 
+                        <br>
+                        working towards a Bachelors of Science in <b> Computer Science </b> 
+                        <br>
+                        with a Minor in <b>Entrepreneurship.</b>
+                        <br>
+                        I expect to graduate Spring of 2020.
+                        <br><br>
+                        I have passions for <b>design, problem-solving</b> and the <b>great outdoors.</b>
+                        <br><br><br>
+                        When I'm not coding, <strong>find me in the mountains.</strong></p>
+                </div>
+            </section>
+            <section id = "project1">
+                
+                <div class="section-inner">
+                    <h1><br><i>Projects</i><br></h1>
+                    <h2>1.First Drop</h2>
+                    <img src="FDIMPROVED.gif" class="">
+                    <p>I combined my love for skiing with the desire to pick up new skills and coded a downhill skiing arcade game <br>
+                    Written in <b> Python </b> using the <b>PyGame</b> library <br>
+                    All logic and graphics designed and built by me <br></p>
+                    <p> <a href="https://bitbucket.org/spw720/firstdrop/src/master/">BitBucket Repository</a><br><br><br></p> 
+
+                </div>
+            </section>
+            <section id = "project2">
+                    <div class="section-inner">
+                            <h2>2.CS Degree Guide</h2>
+                            <img src="CSLG.gif" class="">
+                            <p>An interactive degree guide for U of O CIS Students <br>
+
+                                    Developed in <b>C++</b> using <b>QT</b> for GUI creation and <b>SQL</b> for data collection/data storage <br> <br>
+                                    
+                                    Through this project I learned about working with a team and <br> 
+                                    the logistics behind creating an <b> efficient and succesful group project</b> <br></p>
+                            <p> <a href="https://bitbucket.org/spw720/cslifeguide-330/src/master/">BitBucket Repository</a></p> 
+                    </div>
+                </section>
+                <section id = "project3">
+                        <div class="section-inner">
+                                <h2>3.ACP Brevet Calculator</h2>
+                                <img src="brevets.png" class="">
+                                <p>A Full-Stack ACP calculator packaged as an API <br>
+                                     developed for CIS 330 @ University of Oregon<br>
+                                Uses <b> Docker + Flask + JS + AJAX + MongoDB + REST + AUTHO </b></p>
+                                <p> <a href="https://bitbucket.org/spw720/bikeracebrevetcalculator/src/master/">BitBucket Repository</a></p> 
+                        </div>
+                    </section>
+                    <section id = "project4">
+                            <div class="section-inner">
+                                    <h2>4.Artificial Nueral Network</h2>
+                                    <img src="brevetSS.png" class="">
+                                    <p>Artificial Nueral Network developed in <b>Python</b> <br>
+                                            Takes a dataset of 30,000+ lines of Australian weather data and trains from that data to predict <br>
+                                            whether or not it will rain the following day <br> 
+                                            After training, ANN had a <b> 86% average prediction accuracy rating</b></p>
+                                    <p> <a href="https://bitbucket.org/spw720/artificial-neural-network/src/master/">BitBucket Repository</a></p> 
+                            </div>
+                        </section>
+                        
+            <section id="contact">
+                <div id = "test" class="section-inner">
+                    <h2> <i>Say hi!</i> </h2>
+                    <p>You can find me on: <br><br>
+                    <a href="https://www.linkedin.com/in/sean-wilson-755149142/">LinkedIn</a><br>-and-<br>
+                    <a href="https://bitbucket.org/%7B0836269c-5dd7-4025-a576-e0b5505c922e%7D/">BitBucket</a><br><br>
+
+                    Or, you can <a href="mailto:swilso17@uoregon.edu">send me an email</a> and<br><br>
+                    snag a <a href="SeanWilsonResumeS19.pdf">resume</a> while your'e at it</p>
+                </div>
+            </section>
+        </main>
+        <footer>
+            © Copyright Sean Wilson, 2019
+        </footer>
+    </body>
+</html>
